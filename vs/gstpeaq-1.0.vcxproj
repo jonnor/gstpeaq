@@ -97,8 +97,9 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gstfft-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>vcruntime.lib;ucrt.lib;gstfft-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
+      <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -109,7 +110,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gstfft-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>vcruntime.lib;ucrt.lib;gstfft-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
